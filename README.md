@@ -3,7 +3,7 @@
 ## Our Work Repos
 - [Alan](https://xkcd.com/844/)
 - [Bryant](https://xkcd.com/844/)
-- [Eric]](https://xkcd.com/844/)
+- [Eric](https://xkcd.com/844/)
 - [Jian Hua](https://github.com/fdrHighSchool/fall-2020-work-Metails)
 - [Jin Xin](https://github.com/fdrHighSchool/fall-2020-work-pixel-sky)
 - [Jing Lun](https://xkcd.com/844/)
