@@ -3,7 +3,7 @@
 ## Our Work Repos
 - [Alan](https://xkcd.com/844/)
 - [Bryant](https://xkcd.com/844/)
-- [Eric](https://xkcd.com/844/)
+- [Eric](https://github.com/fdrHighSchool/fall-2020-work-EricLam414)
 - [Jian Hua](https://github.com/fdrHighSchool/fall-2020-work-Metails)
 - [Jin Xin](https://github.com/fdrHighSchool/fall-2020-work-pixel-sky)
 - [Jing Lun](https://github.com/fdrHighSchool/fall-2020-work-JinglunMa24)
@@ -24,4 +24,4 @@
 - [Wilson](https://github.com/fdrHighSchool/fall-2020-work-wilsonliufdr)
 - [Xin Bao](https://github.com/fdrHighSchool/fall-2020-work-XinBao321)
 - [Yang](https://github.com/fdrHighSchool/fall-2020-work-yanglu88)
-- [Zhi Feng](https://xkcd.com/844/)
+- [Zhi Feng](https://github.com/fdrHighSchool/fall-2020-work-zhifeng29)
