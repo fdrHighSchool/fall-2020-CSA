@@ -1,8 +1,8 @@
 # fall-2020-CSA
 
 ## Our Work Repos
-- [Alan](https://xkcd.com/844/)
-- [Bryant](https://xkcd.com/844/)
+- [Alan](https://github.com/fdrHighSchool/fall-2020-work-alan273)
+- [Bryant](https://github.com/fdrHighSchool/fall-2020-work-Blua2)
 - [Eric](https://github.com/fdrHighSchool/fall-2020-work-EricLam414)
 - [Jian Hua](https://github.com/fdrHighSchool/fall-2020-work-Metails)
 - [Jin Xin](https://github.com/fdrHighSchool/fall-2020-work-pixel-sky)
@@ -10,8 +10,8 @@
 - [Joshua](https://github.com/fdrHighSchool/fall-2020-work-JoshuaSiganur)
 - [Kyler](https://github.com/fdrHighSchool/fall-2020-work-LippieVIII)
 - [Maksim](https://xkcd.com/844/)
-- [Max](https://xkcd.com/844/)
-- [Mehmet](https://xkcd.com/844/)
+- [Max](https://github.com/fdrHighSchool/fall-2020-work-Mdroituno)
+- [Mehmet](https://github.com/fdrHighSchool/fall-2020-work-MEHSOYY)
 - [Mohammed](https://github.com/fdrHighSchool/fall-2020-work-Mohammedali3)
 - [Murat](https://xkcd.com/844/)
 - [Nicholas](https://github.com/fdrHighSchool/fall-2020-work-NicholasD7)
