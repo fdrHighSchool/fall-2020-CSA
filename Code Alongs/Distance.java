@@ -19,6 +19,17 @@ public class Distance{
 
     //send data to methods to calculate distance
 
+
+
+
+
+    /*
+    TEST CASES:
+    (0, 0) & (3, 4) --> euclideanDistance = 5, taxicabDistance = 7
+    (0, 0) & (5, 12) --> euclideanDistance = 13, taxicabDistance = 17
+    Do negative coordinates work? If not, how would you go about fixing that?
+    */
+
   }//end main
 
 
