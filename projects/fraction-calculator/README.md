@@ -41,7 +41,7 @@ You must organize your code in the following way to receive credit for your proj
 ## Checkpoints:
 There will be 3 checkpoints to ensure that the calculator is on track for completion. They are required, and are worth a substantial part of your grade. You must submit them on time to receive full credit.
 
-* Checkpoint 1: Parsing one line of input
+* Checkpoint 1: Parsing one line of input **(Due by end of day, TUESDAY 11/03)**
   * Your `main()` method creates a Scanner, reads one line of input, and passes that input to `produceAnswer`.
 
   * `produceAnswer` breaks up that line of input into three Strings: the first operand (fraction), the operator (+ - * /), and the second operand (fraction).  Each of these Strings should be stored in variables inside `produceAnswer`.  
