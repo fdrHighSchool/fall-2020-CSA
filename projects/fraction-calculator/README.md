@@ -1,5 +1,5 @@
 # Fraction Calculator
-### Due: TBD, but likely 11/12/2020
+### Due: 11/18/2020
 
 ![](rhind-papyrus.jpg)
 
@@ -51,7 +51,7 @@ There will be 3 checkpoints to ensure that the calculator is on track for comple
   * `main()` prints the result returned by `produceAnswer`.
 
 
-* Checkpoint 2: Multiple lines of input, parsing fractions
+* Checkpoint 2: Multiple lines of input, parsing fractions **(Due by beginning of class, MONDAY 11/09)**
   * Your `main()` method now accepts input from the user multiple times (until the user types “quit”).
 
   * For each line of input, main calls `produceAnswer()` and prints the returned result.
@@ -65,7 +65,7 @@ There will be 3 checkpoints to ensure that the calculator is on track for comple
 
     * `produceAnswer(“-32 - 27/21”)` returns "whole:0 numerator:27 denominator:21"
 
-* Checkpoint 3: Evaluation
+* Checkpoint 3: Evaluation **(Due by end of day, FRIDAY 11/13)**
   * `produceAnswer` must now evaluate the formula it is given (performing addition, subtraction, multiplication, and division, based on the operator specified), and return the actual answer of that calculation (instead of just returning the second operand).
 
   * The answer need not be reduced, and need not be a mixed fraction.  But it must be correct.
