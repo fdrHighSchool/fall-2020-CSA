@@ -30,6 +30,11 @@ public class Grades{
 
   // get the average of the grades
   System.out.println(getAverage(arr));
+  System.out.println(getAverageV2(arr));
+  System.out.println(Arrays.toString(curveScores(arr)));
+  System.out.println(getAverageV2(arr));
+
+  scanner.close();
   }//end main method
 
   public static double getAverage(int[] arr){
@@ -38,6 +43,29 @@ public class Grades{
       sum += arr[i];
     }
     return sum / arr.length;
-  }
+  }//end getAverage method
 
-}
+  public static double getAverageV2(int[] arr){
+    double sum = 0;
+    for(int grade : arr){
+      sum += grade;
+    }//end for-each loop
+    return sum / arr.length;
+  }//end getAverageV2
+
+  public static int[] curveScores(int[] arr){
+    for(int i = 0; i < arr.length; i++){
+      if(arr[i] > 90 && arr[i] < 95){
+        arr[i] = 95;
+      } else if(arr[i] > 95 && arr[i] < 100){
+        arr[i] = 100;
+      }
+      if (arr[i] < 45){
+        arr[i] = 45;
+      }
+    }//end for loop
+
+    return arr;
+  }//end curveScores
+
+}//end class
