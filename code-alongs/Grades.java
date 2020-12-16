@@ -29,10 +29,12 @@ public class Grades{
   System.out.println(Arrays.toString(arr));
 
   // get the average of the grades
-  System.out.println(getAverage(arr));
-  System.out.println(getAverageV2(arr));
-  System.out.println(Arrays.toString(curveScores(arr)));
-  System.out.println(getAverageV2(arr));
+  // System.out.println(getAverage(arr));
+  // System.out.println(getAverageV2(arr));
+  // System.out.println(Arrays.toString(curveScores(arr)));
+  // System.out.println(getAverageV2(arr));
+
+  System.out.println(getMode(arr));
 
   scanner.close();
   }//end main method
@@ -68,4 +70,40 @@ public class Grades{
     return arr;
   }//end curveScores
 
+  /*
+  -------------------------
+  |  0  |  2  |  4  |  1  |
+  -------------------------
+     0     1     2     3
+  */
+  public static int getMode(int[] arr){
+    //determine the max value from the array
+    int maxVal = arr[0];
+    for (int i = 1; i < arr.length; i++){
+      if (arr[i] > maxVal){
+        maxVal = arr[i];
+      }
+    }
+
+    //create a new array (freq) of size max + 1; index 0 --> max
+    int[] freq = new int[maxVal + 1];
+
+    //go through arr again, and increment values in max that show up in the array
+    for (int grade : arr){
+      freq[grade]++;
+    }
+
+    //determine max value from freq array
+    System.out.println(Arrays.toString(freq));
+    int maxFreq = freq[0];
+    int maxIndex = 0;
+
+    for (int i = 1; i < freq.length; i++){
+      if (freq[i] > maxFreq){
+        maxFreq = freq[i];
+        maxIndex = i;
+      }
+    }
+    return maxIndex;
+  }
 }//end class
