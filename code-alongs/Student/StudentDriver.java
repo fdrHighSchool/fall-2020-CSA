@@ -25,6 +25,8 @@ public class StudentDriver {
     System.out.println(student1.calculateAverage());
     System.out.println(student2.calculateAverage());
     System.out.println(student3.calculateAverage());
+
+    Student student4 = new Student("Mo", "345672301");
   }//end main method
 
 }//end class
