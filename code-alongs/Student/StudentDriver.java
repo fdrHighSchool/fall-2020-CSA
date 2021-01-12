@@ -12,7 +12,7 @@ public class StudentDriver {
 
     student1.addGrade(100);
     student1.displayGrades();
-    student1.addGrade(85);
+    student1.addGrade(90);
     student1.displayGrades();
 
     student2.addGrade(95);
@@ -20,6 +20,11 @@ public class StudentDriver {
 
     Student student3 = new Student("Elias", "987654321");
     student3.fillArray();
+    student3.displayGrades();
+
+    System.out.println(student1.calculateAverage());
+    System.out.println(student2.calculateAverage());
+    System.out.println(student3.calculateAverage());
   }//end main method
 
 }//end class

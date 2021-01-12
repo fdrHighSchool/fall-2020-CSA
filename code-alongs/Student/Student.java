@@ -38,12 +38,11 @@ public class Student {
   }//end setName method
 
 
-  //STARTING POINT FOR TOMORROW
   public void fillArray() {
-    for (int col = 0; col < arr[row].length; col++) {
-      arr[row][col] = (int)(Math.random() * 46 + 55);
-    }//
-  }//
+    for (int i = 0; i < this.grades.length; i++) {
+       this.grades[i] = (int)(Math.random() * 46 + 55);
+    }//end for loop
+  }//end fillArray method
 
 
   /*
@@ -67,8 +66,18 @@ public class Student {
 
 
   public double calculateAverage() {
+    double sum = 0;
+    int count = 0;
 
-    return 0.0;
+    //go through array
+    for (int i = 0; i < this.grades.length; i++){
+      //determine if value is not 0
+      if (this.grades[i] != 0) {
+        sum += this.grades[i];
+        count++;
+      }//end if statement
+    }//end for loop
+    return sum / count;
   }//end calculateAverage() method
 
 
