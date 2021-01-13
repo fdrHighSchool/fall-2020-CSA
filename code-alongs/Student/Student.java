@@ -5,6 +5,7 @@ public class Student {
   private String name;
   private String osis;
   private int[] grades;
+  private int numGrades; //tracks the number of valid score in the array
 
   //------------------------------------------------//
 
@@ -12,9 +13,17 @@ public class Student {
   public Student(String n, String o) {
     this.name = n;
     this.osis = o;
-    grades = new int[10];
+    this.grades = new int[10];
+    this.numGrades = 0;
   }//end constructor method
 
+  // overloaded constructor
+  public Student(String n) {
+    this.name = n;
+    this.osis = "999999999";
+    this.grades = new int[10];
+    this.numGrades = 0;
+  }//end constructor method
   //------------------------------------------------//
 
   // other methods
@@ -24,14 +33,14 @@ public class Student {
 
 
   public String getOSIS() {
-
-    return "";
+    return this.osis;
   }//end getOSIS method
 
 
   public void displayGrades() {
     System.out.println(Arrays.toString(this.grades));
   }//end getGrades method
+
 
   public void setName(String name) {
     this.name = name;
@@ -42,6 +51,8 @@ public class Student {
     for (int i = 0; i < this.grades.length; i++) {
        this.grades[i] = (int)(Math.random() * 46 + 55);
     }//end for loop
+
+    this.numGrades = 10;
   }//end fillArray method
 
 
@@ -54,21 +65,33 @@ public class Student {
    * I: grade (int)
    * R: n/a
    */
+
+   /*
+   +-----------------------+
+   |     |  90  |     |  0  |
+   |  80  |     |  0  |     |
+   +-----------------------+
+   */
   public void addGrade(int grade) {
-    int i = 0;
+    //if there's no room, then replace the lowest score
+    if (this.numGrades == 10) {
+      //search for lowest value
 
-    while (this.grades[i] != 0) {
-      i++;
-    }//end while loop
+      //replace (if grade is greater than the lowest)
 
-    this.grades[i] = grade;
+    }//end if statement
+
+    this.grades[this.numGrades] = grade;
+    this.numGrades++;
   }//end addGrade method
 
 
   public double calculateAverage() {
     double sum = 0;
-    int count = 0;
+    //int count = 0;
 
+    //VERSION 1 - loop through entire array always
+    /*
     //go through array
     for (int i = 0; i < this.grades.length; i++){
       //determine if value is not 0
@@ -77,7 +100,14 @@ public class Student {
         count++;
       }//end if statement
     }//end for loop
-    return sum / count;
+    */
+
+    //VERSION 2 - use numGrades to determine how many many iterations through the array
+    for (int i = 0; i < this.numGrades; i++){
+      sum += this.grades[i];
+    }
+
+    return sum / this.numGrades;
   }//end calculateAverage() method
 
 
