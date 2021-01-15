@@ -76,13 +76,25 @@ public class Student {
     //if there's no room, then replace the lowest score
     if (this.numGrades == 10) {
       //search for lowest value
+      int lowestIndex = 0;
+      int lowestGrade = this.grades[0];
+
+      for (int i = 1; i < this.grades.length; i++) {
+        if (this.grades[i] < lowestGrade) {
+          lowestIndex = i;
+          lowestGrade = this.grades[i];
+        }//end if statement
+      }//end for loop
 
       //replace (if grade is greater than the lowest)
-
+      this.grades[lowestIndex] = grade;
     }//end if statement
 
-    this.grades[this.numGrades] = grade;
-    this.numGrades++;
+    else {
+      this.grades[this.numGrades] = grade;
+      this.numGrades++;
+    }//end else
+
   }//end addGrade method
 
 
